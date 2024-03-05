@@ -3,7 +3,7 @@
 ## Installation du projet
 
 ```cmd
- git clone https://gitlab.com/dwwm_pe2_clermont/examangular
+git clone https://gitlab.com/dwwm_pe2_clermont/examenangular
  cd examangular
  composer install
 ```
