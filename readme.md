@@ -18,6 +18,7 @@ php bin/console lexik:jwt:generate-keypair
 1) Modifier les variables d'environnements dans le fichier .env
 2) Création de la base de donnée 
 ```cmd
+php bin/console doctrine:database:create
 php bin/console make:migration
 php bin/console d:m:m 
 ```
