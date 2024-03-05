@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "31104c89-12a5-4810-987f-51aac0bc2d42",
+		"name": "examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "1462174"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/auth"
+			},
+			"response": []
+		},
+		{
+			"name": "all voyages",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get one",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDk1Njc2ODAsImV4cCI6MTcwOTU3MTI4MCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.foK3PrbR8uJD1ur85T4E4pa8s8Gvt-w54YBou2y4eh1h1xBPjW-IkW95F0ngP5sNciQr4sR7jJrZm8fyykXp9nGSztNzd_W3ojk6zIdGM6Xwi01hRxUck6zhMNKpT6vgGhofxlt54iuYsGV1OK0o_fJpani8rqJRVNp47fYPJrw7ga_5Cmvh7NrlqC3iV5zC5gH-h0LuNV36refMzYHFZjUBYltU40HGcvjmAA_UAmh6Mfde4ckZj1UvbDu_9xHn70mLdTWzKF5t-d5jZ6GzDXkR49XBVpmqKSy_JtSb2ETs0XxSQtBsPrlKo468UIoD1LANayYclEPlEZg-y4D5_g"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"destination\": \"Val thorens\",\n    \"lattitude\": 45.29777000,\n    \"longitude\": 6.58377000,\n    \"type\": \"Montagne\",\n    \"mainPicture\": {\n      \"src\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg/1200px-View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg\",\n      \"alt\": \"Image de Val Thorens\"\n    },\n    \"pictures\": [\n      {\n        \"src\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg/1200px-View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg\",\n        \"alt\": \"Image 1 de VT\"\n      },\n         {\n        \"src\": \"https://www.valthorens.com/app/uploads/iris-images/4693/shooting-ski-t.loubere-ot-val-thorens-4-copie-1-1920x1080-c.webp\",\n        \"alt\": \"Image 2 de VT\"\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:8000/api/voyages"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDk2MTgyODQsImV4cCI6MTcwOTYyMTg4NCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.LI_F3mlAvDWwCfvujaneTbyE_fZRGr9L_r7Vb4ebJ_LdXRLZoMehWzneQwTk4q04sBrZlwzmPMeih70iIJYZjTZBT6PkFetBxVyc67gTdz07bvPeYV03cMfTCIvSIf3b-zl4dEu8eSrYpZmzLrFbD-Un6W9Oam2ja0ltBbQSYtvkJkdyPakeUyetpI4sAImKpNIuefNlb5WecrPzxUvUgHcouH2nI9GZtsaW868m63WDJNAv6r2SYA93EQXRxWUHAxK4L7HOb6NvBhJ5tWk1xZacT3Zf23VxSY4AFCYDKjTRhlgqvgd-YkFsjVlF9yRwj4bsJdV0NRCmggSn06TbYg"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 8,\n    \"destination\": \"Val thorensss\",\n    \"lattitude\": 45.29777,\n    \"longitude\": 6.58377,\n    \"type\": \"Montagne\",\n    \"mainPicture\": {\n        \"src\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg/1200px-View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg\",\n        \"alt\": \"Image de Val Thorens\"\n    },\n    \"pictures\": [\n        {\n            \"src\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg/1200px-View_of_Val_Thorens_in_the_morning_from_Boismint_1.jpg\",\n            \"alt\": \"Image 1 de VT\"\n        },\n        {\n    \n            \"src\": \"https://www.valthorens.com/app/uploads/iris-images/4693/shooting-ski-t.loubere-ot-val-thorens-4-copie-1-1920x1080-c.webp\",\n            \"alt\": \"Image 2 de VT\"\n        }\n    ],\n    \"nbStar\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:8000/api/voyages/8"
+			},
+			"response": []
+		}
+	]
+}
